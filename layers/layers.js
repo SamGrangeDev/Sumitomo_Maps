@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:7844").setExtent([111.481373, -39.009158, 162.325010, -12.163462]);
+//ol.proj.get("EPSG:7844").setExtent([111.481373, -38.729706, 162.325010, -12.442913]);
 var wms_layers = [];
 
 
@@ -41,7 +41,7 @@ var lyr_AustralianCapitalTerritory_2 = new ol.layer.Vector({
                 source:jsonSource_AustralianCapitalTerritory_2, 
                 style: style_AustralianCapitalTerritory_2,
                 popuplayertitle: "Australian Capital Territory",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/AustralianCapitalTerritory_2.png" /> Australian Capital Territory'
             });
 var format_NorthernTerritory_3 = new ol.format.GeoJSON();
@@ -56,7 +56,7 @@ var lyr_NorthernTerritory_3 = new ol.layer.Vector({
                 source:jsonSource_NorthernTerritory_3, 
                 style: style_NorthernTerritory_3,
                 popuplayertitle: "Northern Territory",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/NorthernTerritory_3.png" /> Northern Territory'
             });
 var format_Tasmania_4 = new ol.format.GeoJSON();
@@ -71,7 +71,7 @@ var lyr_Tasmania_4 = new ol.layer.Vector({
                 source:jsonSource_Tasmania_4, 
                 style: style_Tasmania_4,
                 popuplayertitle: "Tasmania",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Tasmania_4.png" /> Tasmania'
             });
 var format_SouthAustralia_5 = new ol.format.GeoJSON();
@@ -86,7 +86,7 @@ var lyr_SouthAustralia_5 = new ol.layer.Vector({
                 source:jsonSource_SouthAustralia_5, 
                 style: style_SouthAustralia_5,
                 popuplayertitle: "South Australia",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/SouthAustralia_5.png" /> South Australia'
             });
 var format_NewSouthWales_6 = new ol.format.GeoJSON();
@@ -101,7 +101,7 @@ var lyr_NewSouthWales_6 = new ol.layer.Vector({
                 source:jsonSource_NewSouthWales_6, 
                 style: style_NewSouthWales_6,
                 popuplayertitle: "New South Wales",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/NewSouthWales_6.png" /> New South Wales'
             });
 var format_WesternAustralia_7 = new ol.format.GeoJSON();
@@ -116,7 +116,7 @@ var lyr_WesternAustralia_7 = new ol.layer.Vector({
                 source:jsonSource_WesternAustralia_7, 
                 style: style_WesternAustralia_7,
                 popuplayertitle: "Western Australia",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/WesternAustralia_7.png" /> Western Australia'
             });
 var format_Queensland_8 = new ol.format.GeoJSON();
@@ -131,7 +131,7 @@ var lyr_Queensland_8 = new ol.layer.Vector({
                 source:jsonSource_Queensland_8, 
                 style: style_Queensland_8,
                 popuplayertitle: "Queensland",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Queensland_8.png" /> Queensland'
             });
 var format_Victoria_9 = new ol.format.GeoJSON();
@@ -146,7 +146,7 @@ var lyr_Victoria_9 = new ol.layer.Vector({
                 source:jsonSource_Victoria_9, 
                 style: style_Victoria_9,
                 popuplayertitle: "Victoria",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Victoria_9.png" /> Victoria'
             });
 var format_ScottParkGroup_10 = new ol.format.GeoJSON();
@@ -221,7 +221,7 @@ var lyr_GrangeSites_14 = new ol.layer.Vector({
                 source:jsonSource_GrangeSites_14, 
                 style: style_GrangeSites_14,
                 popuplayertitle: "Grange Sites",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/GrangeSites_14.png" /> Grange Sites'
             });
 var group_GrangeSites = new ol.layer.Group({
@@ -268,18 +268,18 @@ lyr_MetriconVictoria_12.set('fieldImages', {'fid': '', 'LOC_NAME': '', 'Builder'
 lyr_Henley_13.set('fieldImages', {'LOC_NAME': 'TextEdit', 'STATE': 'TextEdit', 'LGA': 'TextEdit', 'Builder_2': 'TextEdit', 'Grange_Pro': 'TextEdit', 'Market_Typ': 'TextEdit', });
 lyr_GrangeSites_14.set('fieldImages', {'fid': '', 'LC_PLY_PID': '', 'LOC_PID': '', 'DT_CREATE': '', 'LOC_NAME': '', 'LOC_CLASS': '', 'STATE': '', 'SA1_CODE21': '', 'CHG_FLAG21': '', 'CHG_LBL21': '', 'SA2_CODE21': '', 'SA2_NAME21': '', 'SA3_CODE21': '', 'SA3_NAME21': '', 'SA4_CODE21': '', 'SA4_NAME21': '', 'GCC_CODE21': '', 'GCC_NAME21': '', 'STE_CODE21': '', 'STE_NAME21': '', 'AUS_CODE21': '', 'AUS_NAME21': '', 'AREASQKM21': '', 'LOCI_URI21': '', 'OBJECTID': '', 'NAME': '', 'POSTCODE': '', 'Shape.area': '', 'Shape.len': '', 'layer': '', 'path': '', 'Locality': '', });
 lyr_StateBoundary_1.set('fieldLabels', {'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'CHG_FLAG21': 'no label', 'CHG_LBL21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', });
-lyr_AustralianCapitalTerritory_2.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_NorthernTerritory_3.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_Tasmania_4.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_SouthAustralia_5.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_NewSouthWales_6.set('fieldLabels', {'fid': 'no label', 'LGA_CODE24': 'no label', 'LGA_NAME24': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM': 'no label', 'LOCI_URI21': 'no label', });
-lyr_WesternAustralia_7.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_Queensland_8.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_Victoria_9.set('fieldLabels', {'fid': 'no label', 'SAL_CODE21': 'no label', 'SAL_NAME21': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM21': 'no label', 'LOCI_URI21': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
-lyr_ScottParkGroup_10.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'STATE': 'inline label - visible with data', 'builder': 'inline label - visible with data', 'market': 'inline label - visible with data', });
-lyr_Metricon_11.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'Builder': 'inline label - visible with data', 'Market Type': 'inline label - visible with data', });
-lyr_MetriconVictoria_12.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'Builder': 'inline label - visible with data', 'Market Type': 'inline label - visible with data', });
-lyr_Henley_13.set('fieldLabels', {'LOC_NAME': 'inline label - visible with data', 'STATE': 'inline label - visible with data', 'LGA': 'inline label - visible with data', 'Builder_2': 'inline label - visible with data', 'Grange_Pro': 'inline label - visible with data', 'Market_Typ': 'inline label - visible with data', });
+lyr_AustralianCapitalTerritory_2.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_NorthernTerritory_3.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
+lyr_Tasmania_4.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_SouthAustralia_5.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_NewSouthWales_6.set('fieldLabels', {'fid': 'hidden field', 'LGA_CODE24': 'hidden field', 'LGA_NAME24': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM': 'hidden field', 'LOCI_URI21': 'hidden field', });
+lyr_WesternAustralia_7.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_Queensland_8.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_Victoria_9.set('fieldLabels', {'fid': 'hidden field', 'SAL_CODE21': 'hidden field', 'SAL_NAME21': 'inline label - visible with data', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'SHAPE_Leng': 'hidden field', 'SHAPE_Area': 'hidden field', });
+lyr_ScottParkGroup_10.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'STATE': 'inline label - visible with data', 'builder': 'inline label - visible with data', 'market': 'hidden field', });
+lyr_Metricon_11.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'Builder': 'inline label - visible with data', 'Market Type': 'hidden field', });
+lyr_MetriconVictoria_12.set('fieldLabels', {'fid': 'hidden field', 'LOC_NAME': 'inline label - visible with data', 'Builder': 'inline label - visible with data', 'Market Type': 'hidden field', });
+lyr_Henley_13.set('fieldLabels', {'LOC_NAME': 'inline label - visible with data', 'STATE': 'inline label - visible with data', 'LGA': 'inline label - visible with data', 'Builder_2': 'inline label - visible with data', 'Grange_Pro': 'hidden field', 'Market_Typ': 'hidden field', });
 lyr_GrangeSites_14.set('fieldLabels', {'fid': 'hidden field', 'LC_PLY_PID': 'hidden field', 'LOC_PID': 'hidden field', 'DT_CREATE': 'hidden field', 'LOC_NAME': 'hidden field', 'LOC_CLASS': 'hidden field', 'STATE': 'hidden field', 'SA1_CODE21': 'hidden field', 'CHG_FLAG21': 'hidden field', 'CHG_LBL21': 'hidden field', 'SA2_CODE21': 'hidden field', 'SA2_NAME21': 'hidden field', 'SA3_CODE21': 'hidden field', 'SA3_NAME21': 'hidden field', 'SA4_CODE21': 'hidden field', 'SA4_NAME21': 'hidden field', 'GCC_CODE21': 'hidden field', 'GCC_NAME21': 'hidden field', 'STE_CODE21': 'hidden field', 'STE_NAME21': 'hidden field', 'AUS_CODE21': 'hidden field', 'AUS_NAME21': 'hidden field', 'AREASQKM21': 'hidden field', 'LOCI_URI21': 'hidden field', 'OBJECTID': 'hidden field', 'NAME': 'hidden field', 'POSTCODE': 'hidden field', 'Shape.area': 'hidden field', 'Shape.len': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'Locality': 'inline label - visible with data', });
 lyr_GrangeSites_14.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
