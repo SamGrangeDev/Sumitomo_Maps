@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([151.052227, -28.128052, 153.876874, -26.662986], map.getSize());
+map.getView().fit([100.945089, -45.181436, 175.308086, -7.483528], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -440,7 +440,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-left-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Sumitomo Maps</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Sumitomo Map</h2>';
         return titleElement;
     })(),
     target: 'top-left-container'

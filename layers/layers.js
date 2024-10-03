@@ -1,21 +1,9 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:7844").setExtent([151.052227, -28.128052, 153.876874, -26.662986]);
+//ol.proj.get("EPSG:7844").setExtent([100.945089, -45.181436, 175.308086, -7.483528]);
 var wms_layers = [];
 
 
-        var lyr_ESRISatelliteArcGISWorld_Imagery_0 = new ol.layer.Tile({
-            'title': 'ESRI Satellite (ArcGIS/World_Imagery)',
-            //'type': 'base',
-            'opacity': 1.000000,
-            
-            
-            source: new ol.source.XYZ({
-    attributions: ' ',
-                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
-            })
-        });
-
-        var lyr_GoogleMaps_1 = new ol.layer.Tile({
+        var lyr_GoogleMaps_0 = new ol.layer.Tile({
             'title': 'Google Maps',
             //'type': 'base',
             'opacity': 1.000000,
@@ -24,6 +12,18 @@ var wms_layers = [];
             source: new ol.source.XYZ({
     attributions: ' ',
                 url: 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'
+            })
+        });
+
+        var lyr_ESRISatelliteArcGISWorld_Imagery_1 = new ol.layer.Tile({
+            'title': 'ESRI Satellite (ArcGIS/World_Imagery)',
+            //'type': 'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
             })
         });
 var format_StateBoundary_2 = new ol.format.GeoJSON();
@@ -38,7 +38,7 @@ var lyr_StateBoundary_2 = new ol.layer.Vector({
                 source:jsonSource_StateBoundary_2, 
                 style: style_StateBoundary_2,
                 popuplayertitle: "State Boundary",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/StateBoundary_2.png" /> State Boundary'
             });
 var format_AustralianCapitalTerritory_3 = new ol.format.GeoJSON();
@@ -249,8 +249,8 @@ var group_BaseLayersBoundaries = new ol.layer.Group({
                                 fold: "open",
                                 title: "Base Layers (Boundaries)"});
 
-lyr_ESRISatelliteArcGISWorld_Imagery_0.setVisible(true);lyr_GoogleMaps_1.setVisible(true);lyr_StateBoundary_2.setVisible(true);lyr_AustralianCapitalTerritory_3.setVisible(true);lyr_NorthernTerritory_4.setVisible(true);lyr_Tasmania_5.setVisible(true);lyr_SouthAustralia_6.setVisible(true);lyr_NewSouthWales_7.setVisible(true);lyr_WesternAustralia_8.setVisible(true);lyr_Queensland_9.setVisible(true);lyr_Victoria_10.setVisible(true);lyr_ScottParkGroup_11.setVisible(false);lyr_Metricon_12.setVisible(false);lyr_MetriconVictoria_13.setVisible(false);lyr_Henley_14.setVisible(false);lyr_GrangeSites_15.setVisible(false);
-var layersList = [lyr_ESRISatelliteArcGISWorld_Imagery_0,lyr_GoogleMaps_1,group_BaseLayersBoundaries,group_Builders,group_GrangeSites];
+lyr_GoogleMaps_0.setVisible(true);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_StateBoundary_2.setVisible(true);lyr_AustralianCapitalTerritory_3.setVisible(true);lyr_NorthernTerritory_4.setVisible(true);lyr_Tasmania_5.setVisible(true);lyr_SouthAustralia_6.setVisible(true);lyr_NewSouthWales_7.setVisible(true);lyr_WesternAustralia_8.setVisible(true);lyr_Queensland_9.setVisible(true);lyr_Victoria_10.setVisible(true);lyr_ScottParkGroup_11.setVisible(false);lyr_Metricon_12.setVisible(false);lyr_MetriconVictoria_13.setVisible(false);lyr_Henley_14.setVisible(false);lyr_GrangeSites_15.setVisible(false);
+var layersList = [lyr_GoogleMaps_0,lyr_ESRISatelliteArcGISWorld_Imagery_1,group_BaseLayersBoundaries,group_Builders,group_GrangeSites];
 lyr_StateBoundary_2.set('fieldAliases', {'STE_CODE21': 'STE_CODE21', 'STE_NAME21': 'STE_NAME21', 'CHG_FLAG21': 'CHG_FLAG21', 'CHG_LBL21': 'CHG_LBL21', 'AUS_CODE21': 'AUS_CODE21', 'AUS_NAME21': 'AUS_NAME21', 'AREASQKM21': 'AREASQKM21', 'LOCI_URI21': 'LOCI_URI21', });
 lyr_AustralianCapitalTerritory_3.set('fieldAliases', {'fid': 'fid', 'SAL_CODE21': 'SAL_CODE21', 'SAL_NAME21': 'SAL_NAME21', 'STE_CODE21': 'STE_CODE21', 'STE_NAME21': 'STE_NAME21', 'AUS_CODE21': 'AUS_CODE21', 'AUS_NAME21': 'AUS_NAME21', 'AREASQKM21': 'AREASQKM21', 'LOCI_URI21': 'LOCI_URI21', 'SHAPE_Leng': 'SHAPE_Leng', 'SHAPE_Area': 'SHAPE_Area', });
 lyr_NorthernTerritory_4.set('fieldAliases', {'fid': 'fid', 'SAL_CODE21': 'SAL_CODE21', 'SAL_NAME21': 'SAL_NAME21', 'STE_CODE21': 'STE_CODE21', 'STE_NAME21': 'STE_NAME21', 'AUS_CODE21': 'AUS_CODE21', 'AUS_NAME21': 'AUS_NAME21', 'AREASQKM21': 'AREASQKM21', 'LOCI_URI21': 'LOCI_URI21', 'SHAPE_Leng': 'SHAPE_Leng', 'SHAPE_Area': 'SHAPE_Area', });
